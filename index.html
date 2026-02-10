@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mrsandman.ai</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 560px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #c9a0ff, #7eb8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+        .status {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border: 1px solid #333;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+        .status::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #c9a0ff;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>mrsandman.ai</h1>
+        <p class="tagline">dream something up</p>
+        <span class="status">waking up soon</span>
+    </div>
+</body>
+</html>
